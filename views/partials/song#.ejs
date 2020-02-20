@@ -1,0 +1,16 @@
+<% top50.forEach(song => {%>
+    <% console.log(song.rank); console.log(number); if (song.rank == number) { %>
+    <li class = 'container'>
+        <div class='box'>
+            <div class='titleA'>
+                <%-song.title %>
+            </div>
+            <div class = 'artistA'>
+                <%-song.artist%>
+            </div>
+            <div class='streamsA'>
+                <%- song.streams %>
+            </div>
+        </div>
+    </li>
+<% };}); %>

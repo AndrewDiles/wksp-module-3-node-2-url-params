@@ -1,0 +1,19 @@
+
+<% books.forEach(book => {%>
+    <% if (book.id == number) { %>
+        <li> 
+            <div class= 'bookRow'>
+                <div>
+                    <img src=<%=book.imgUrl%>>
+                </div>
+                <div>
+                    <div>
+                    <h2><%-book.title%></h2>
+                    <p>Genre: <%-book.type%></p>
+                    <p>Author: <%-book.author%></p>
+                    </div>
+                    <p class = 'blurb'><%-book.description%></p>
+                </div>
+            </div>
+        </li>
+<% };}); %>

@@ -1,0 +1,33 @@
+<% books.forEach(book => { %>
+    <% if (genre != 'all') {if (book.type == genre) { %>
+        <li> 
+            <div class= 'bookRow'>
+                <div>
+                    <img src=<%=book.imgUrl%>>
+                </div>
+                <div>
+                    <div>
+                    <h2><%-book.title%></h2>
+                    <p>Genre: <%-book.type%></p>
+                    <p>Author: <%-book.author%></p>
+                    </div>
+                </div>
+            </div>
+        </li>
+<% };} else { %>
+        <li> 
+            <div class= 'bookRow'>
+                <div>
+                    <img src=<%=book.imgUrl%>>
+                </div>
+                <div>
+                    <div>
+                    <h2><%-book.title%></h2>
+                    <p>Genre: <%-book.type%></p>
+                    <p>Author: <%-book.author%></p>
+                    </div>
+                    <p class = 'blurb'><%-book.description%></p>
+                </div>
+            </div>
+        </li>
+    <% };}); %>

@@ -1,0 +1,35 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    max-width: 350px;
+    width: 350px;
+    height: 350px;
+    padding: 25px;
+    // display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 20px 0px grey;
+    border-radius: 3px;
+}
+
+.titleA {
+    height: 50px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+.artistA {
+    height: 50px;
+    text-align: center;
+
+}
+.streamsA {
+    padding-top: 50px;
+    height: 200px;
+    text-align: center;
+    color: grey;
+    opacity: 0.75;
+    font-size: 8rem;;
+}
